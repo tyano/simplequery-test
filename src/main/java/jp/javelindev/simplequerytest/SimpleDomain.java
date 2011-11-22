@@ -15,8 +15,8 @@
  */
 package jp.javelindev.simplequerytest;
 
+import com.shelfmap.simplequery.annotation.GenerateClass;
 import com.shelfmap.simplequery.annotation.Property;
-import com.shelfmap.simplequery.annotation.SimpleDbDomain;
 import com.shelfmap.simplequery.domain.RetainType;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,7 +25,7 @@ import java.util.Collection;
  *
  * @author Tsutomu YANO
  */
-@SimpleDbDomain(value="simpledomain", autoGenerate=true)
+@GenerateClass
 public interface SimpleDomain extends SuperInterface {
     String getName();
 
@@ -34,7 +34,7 @@ public interface SimpleDomain extends SuperInterface {
 
     boolean isMale();
 
-    @Property(retainType = RetainType.NEW, realType = ArrayList.class)
+    @Property(retainType = RetainType.NEW, realType=ArrayList.class)
     Collection<? extends Number> getCollection();
     void setCollection(Collection<? extends Number> number);
 }
