@@ -17,7 +17,7 @@ package jp.javelindev.simplequerytest;
 
 import com.shelfmap.simplequery.annotation.GenerateClass;
 import com.shelfmap.simplequery.annotation.Property;
-import com.shelfmap.simplequery.domain.RetainType;
+import com.shelfmap.simplequery.processing.RetainType;
 import java.util.ArrayList;
 import java.util.Collection;
 
