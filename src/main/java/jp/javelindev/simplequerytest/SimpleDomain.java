@@ -25,7 +25,7 @@ import java.util.Collection;
  *
  * @author Tsutomu YANO
  */
-@GenerateClass
+@GenerateClass(superClass=SimpleSuperClass.class)
 public interface SimpleDomain extends SuperInterface {
     String getName();
 
