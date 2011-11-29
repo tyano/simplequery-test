@@ -18,7 +18,6 @@ package jp.javelindev.simplequerytest;
 import com.shelfmap.simplequery.annotation.GenerateClass;
 import com.shelfmap.simplequery.annotation.Property;
 import com.shelfmap.simplequery.processing.RetainType;
-import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -26,15 +25,20 @@ import java.util.Collection;
  * @author Tsutomu YANO
  */
 @GenerateClass(superClass=SimpleSuperClass.class)
-public interface SimpleDomain extends SuperInterface {
+public interface SimpleDomain {//extends SuperInterface {
     String getName();
+    void setName(String name);
 
     Integer getAge();
     void setAge(Integer age);
 
     boolean isMale();
+    void setMale(boolean isMale);
 
-    @Property(retainType = RetainType.NEW, realType=ArrayList.class)
+    @Property(retainType = RetainType.HOLD)
     Collection<? extends Number> getCollection();
     void setCollection(Collection<? extends Number> number);
+
+    int getCount();
+    void setCount(int count);
 }
