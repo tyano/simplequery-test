@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>com.shelfmap</groupId>
-            <artifactId>simplequery</artifactId>
+            <artifactId>interface-processor</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -46,7 +46,7 @@
                     <target>1.6</target>
                     <compilerArgument>-implicit:class</compilerArgument>
                     <annotationProcessors>
-                        <annotationProcessor>com.shelfmap.simplequery.processing.DomainAnnotationProcessor</annotationProcessor>
+                        <annotationProcessor>com.shelfmap.interfaceprocessor.InterfaceProcessor</annotationProcessor>
                     </annotationProcessors>
                     <showWarnings>true</showWarnings>
                     <verbose>true</verbose>

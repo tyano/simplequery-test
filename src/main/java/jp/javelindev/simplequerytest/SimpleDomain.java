@@ -15,9 +15,9 @@
  */
 package jp.javelindev.simplequerytest;
 
-import com.shelfmap.simplequery.annotation.GenerateClass;
-import com.shelfmap.simplequery.annotation.Property;
-import com.shelfmap.simplequery.processing.RetainType;
+import com.shelfmap.interfaceprocessor.RetainType;
+import com.shelfmap.interfaceprocessor.annotation.GenerateClass;
+import com.shelfmap.interfaceprocessor.annotation.Property;
 import java.util.Collection;
 
 /**
