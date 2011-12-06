@@ -15,30 +15,22 @@
  */
 package jp.javelindev.simplequerytest;
 
-import com.shelfmap.interfaceprocessor.RetainType;
 import com.shelfmap.interfaceprocessor.annotation.GenerateClass;
-import com.shelfmap.interfaceprocessor.annotation.Property;
-import java.util.Collection;
 
 /**
  *
  * @author Tsutomu YANO
  */
-@GenerateClass(superClass=SimpleSuperClass.class)
-public interface SimpleDomain {//extends SuperInterface {
+@GenerateClass
+public interface SimpleDomain {
     String getName();
     void setName(String name);
 
-    Integer getAge();
-    void setAge(Integer age);
-
+    int getAge();
+    
     boolean isMale();
-    void setMale(boolean isMale);
-
-    @Property(retainType = RetainType.HOLD)
-    Collection<? extends Number> getCollection();
-    void setCollection(Collection<? extends Number> number);
-
-    int getCount();
-    void setCount(int count);
+    void setMale(boolean male);
+    
+    float getCoefficient();
+    void setCoefficient(float value);
 }

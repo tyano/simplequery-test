@@ -49,7 +49,6 @@
                         <annotationProcessor>com.shelfmap.interfaceprocessor.InterfaceProcessor</annotationProcessor>
                     </annotationProcessors>
                     <showWarnings>true</showWarnings>
-                    <verbose>true</verbose>
                 </configuration>
             </plugin>
         </plugins>
